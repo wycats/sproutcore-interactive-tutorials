@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/bpm_styles.css" type="text/css" media="screen" charset="utf-8" />
+    <title>sproutcore-live-tutorial</title>
+  </head>
+  <body>
+    <script type="text/x-handlebars" data-view="Tutorial.Root">
+    <div id="docs">
+      {{#view SC.Button target="Tutorial.outputController" action="toggle"}}
+        {{Tutorial.outputController.title}}
+      {{/view}}
+    </div>
+
+    {{view Tutorial.WorkArea}}
+    </script>
+  </body>
+
+  <script src="vendor/ace/ace-uncompressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="vendor/ace/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+  <script src="vendor/ace/mode-html.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript" src="assets/bpm_libs.js"></script>
+  <script type="text/javascript">
+    spade.require('sproutcore-live-tutorial');
+  </script>
+</html>

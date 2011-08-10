@@ -1,0 +1,50 @@
+#docs {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  width: 500px;
+  top: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-box-shadow: 1px 0 4px rgba(0, 0, 0, 0.7);
+
+  button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 25px;
+  }
+}
+
+#work-area {
+  z-index: 10;
+  position: absolute;
+  background-color: #ddd;
+  left: 500px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  .scratch {
+    position: absolute;
+    display: none;
+    height: 50%;
+    width: 100%;
+    display: border-box;
+
+    &.top, &.bottom {
+      display: block;
+    }
+
+    &.top {
+      top: 0;
+      background-color: #fcc;
+    }
+
+    &.bottom {
+      top: 50%;
+      background-color: #cfc;
+    }
+  }
+}
